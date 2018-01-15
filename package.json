@@ -1,0 +1,18 @@
+{
+  "name": "tracking-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch data/tasks.json",
+    "client": "lite-server -c config/bs-config.json",
+    "start": "npm run server | npm run client"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.12.1",
+    "lite-server": "^2.3.0"
+  }
+}

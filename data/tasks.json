@@ -1,0 +1,2269 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "taskId": "Task-001",
+      "title": "Fix validation fields",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "priority": "4",
+      "priorityId": "3",
+      "priorityDescription": "Low",
+      "priorityUrl": "img/icons/priority/4.svg",
+      "progress": "0",
+      "status": "To Do",
+      "type": "Bug",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "Errors can crop up if you enter invalid characters into your app’s validation fields or exceed the maximum field length. These bugs occur often and are mostly assigned low priority, as they are generally not that severe, but in some cases, it might mean life or death for your app if you have wrong or missing field validations. It’s good to limit the number of characters allotted to fields like ZIP code, telephone number, name, city, state, etc.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "2",
+      "taskId": "Task-002",
+      "title": "Screening Quiz",
+      "assigneeId": "2",
+      "assignee": "Oleksiy Kozachenko",
+      "assigneeAvatarUrl": "img/avatar/00002.jpg",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "0",
+      "status": "To Do",
+      "type": "Story",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "As the HR manager, I want to create a screening quiz so that I can understand whether I want to send possible recruits to the functional manager.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "3",
+      "taskId": "Task-003",
+      "title": "Review Web Standards",
+      "assigneeId": "5",
+      "assignee": "Rita Novak",
+      "assigneeAvatarUrl": "img/avatar/00005.jpg",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "progress": "0",
+      "status": "To Do",
+      "type": "Improvement",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "There are a lot of reasons to meet web design standards, but one of the biggest reasons is search engine friendliness. The cleaner your code, the more error-free, the happier you make search engines. Google and others actually score points for validated and compliant website code. The easier it is for search engines to crawl through your site, the faster you end up in their database, working on your page rank.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "4",
+      "taskId": "Task-004",
+      "title": "robots.txt",
+      "assigneeId": "9",
+      "assignee": "Anton Galay",
+      "assigneeAvatarUrl": "img/avatar/00009.jpg",
+      "priority": "4",
+      "priorityId": "3",
+      "priorityDescription": "Low",
+      "priorityUrl": "img/icons/priority/4.svg",
+      "progress": "0",
+      "status": "To Do",
+      "type": "Incident",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "The robots.txt is blocking webpages.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "5",
+      "taskId": "Task-005",
+      "title": "Fix browser compatibility",
+      "assigneeId": "4",
+      "assignee": "Anna Makhankova",
+      "assigneeAvatarUrl": "img/avatar/00004.jpg",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "10",
+      "status": "In Progress",
+      "type": "Bug",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "Another very frequent problem is an app’s browser compatibility. With this in mind, our QA team tries to test on as many different browsers as possible, including older versions. We take user experience and preferences into consideration when deciding which browser(s) to give priority to during testing. From our personal experience, the most problematic browsers are Internet Explorer (different versions) and the older versions of Safari.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "field": "It is a known fact that the right styleguide can significantly incresfsdfase development speed, debugging, and the implementation of new features in legacy code. Sadly, most CSS codebases are sometimes developed without any structure or naming conventions. This leads to an unmaintainable CSS codebase in the long term."
+    },
+    {
+      "id": "6",
+      "taskId": "Task-006",
+      "title": "Quiz Recall",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "priority": "2",
+      "priorityId": "1",
+      "priorityDescription": "High",
+      "priorityUrl": "img/icons/priority/2.svg",
+      "progress": "50",
+      "status": "In Progress",
+      "type": "Story",
+      "reporterId": "6",
+      "reporter": "Martyn Mossi (admin)",
+      "reporterAvatarUrl": "img/avatar/00006.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "As a manager, I want to browse my existing quizzes so I can recall what I have in place and figure out if I can just reuse or update an existing quiz for the position I need now.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "field": "Isdsdsdt is a known fact that the right styleguide can significantly increase development speed, debugging, and the implementation of new features in legacy code. Sadly, most CSS codebases are sometimes developed without any structure or naming conventions. This leads to an unmaintainable CSS codebase in the long term."
+    },
+    {
+      "id": "7",
+      "taskId": "Task-007",
+      "title": "Use rel canonical to avoid duplicate content",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "priority": "5",
+      "priorityId": "4",
+      "priorityDescription": "Very Low",
+      "priorityUrl": "img/icons/priority/5.svg",
+      "progress": "99",
+      "status": "Verify",
+      "type": "Improvement",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "It is a known fact that the right styleguide can significantly increase development speed, debugging, and the implementation of new features in legacy code. Sadly, most CSS codebases are sometimes developed without any structure or naming conventions. This leads to an unmaintainable CSS codebase in the long term.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "8",
+      "taskId": "Task-008",
+      "title": "Stylelint",
+      "assigneeId": "5",
+      "assignee": "Rita Novak",
+      "assigneeAvatarUrl": "img/avatar/00005.jpg",
+      "priority": "2",
+      "priorityId": "1",
+      "priorityDescription": "High",
+      "priorityUrl": "img/icons/priority/2.svg",
+      "progress": "99",
+      "status": "Verify",
+      "type": "Bug",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval (admin)",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "All CSS or SCSS files are without any errors.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "9",
+      "taskId": "Task-009",
+      "title": "App crash caused by button click",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "99",
+      "status": "Verify",
+      "type": "Bug",
+      "reporterId": "6",
+      "reporter": "Martyn Mossi (admin)",
+      "reporterAvatarUrl": "img/avatar/00006.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "It is a known fact that the right styleguide can significantly increase development speed, debugging, and the implementation of new features in legacy code. Sadly, most CSS codebases are sometimes developed without any structure or naming conventions. This leads to an unmaintainable CSS codebase in the long term.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "10",
+      "taskId": "Task-010",
+      "title": "Limited Backup",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "priority": "4",
+      "priorityId": "3",
+      "priorityDescription": "Low",
+      "priorityUrl": "img/icons/priority/4.svg",
+      "progress": "100",
+      "status": "Done",
+      "type": "Story",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "As a user, I can indicate folders not to backup so that my backup drive isn't filled up with things I don't need saved.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "11",
+      "taskId": "Task-011",
+      "title": "Add RSS link",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "100",
+      "status": "Done",
+      "type": "Improvement",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "RSS feed: If your project is a blog or has articles, an RSS link was provided.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "12",
+      "taskId": "Task-012",
+      "title": "Webfont loader",
+      "assigneeId": "4",
+      "assignee": "Anna Makhankova",
+      "assigneeAvatarUrl": "img/avatar/00004.jpg",
+      "priority": "2",
+      "priorityId": "1",
+      "priorityDescription": "High",
+      "priorityUrl": "img/icons/priority/2.svg",
+      "progress": "100",
+      "status": "Done",
+      "type": "Incident",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "Control loading behavior with a webfont loader.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "13",
+      "taskId": "Task-013",
+      "title": "Mouse “hover” pop-ups and other features aren’t working on Edge",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "priority": "4",
+      "priorityId": "3",
+      "priorityDescription": "Low",
+      "priorityUrl": "img/icons/priority/4.svg",
+      "progress": "100",
+      "status": "Done",
+      "type": "Bug",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "If you aren’t seeing the usual auto-info when you hover over something with your mouse, Edge may need to be cleared out. Head over to the “. . .” button and choose Settings. Then click “choose what to clear” under Clear browser data. Clear out your browsing cache (and history if needed), then reboot Edge and see if the problem is fixed.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "14",
+      "taskId": "Task-014",
+      "title": "Edit user details",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "progress": "50",
+      "status": "In Progress",
+      "type": "Story",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "As a user, I want to add and edit my contact details so I can keep it up to date.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "15",
+      "taskId": "Task-015",
+      "title": "Google Analytics",
+      "assigneeId": "4",
+      "assignee": "Anna Makhankova",
+      "assigneeAvatarUrl": "img/avatar/00004.jpg",
+      "priority": "2",
+      "priorityId": "1",
+      "priorityDescription": "High",
+      "priorityUrl": "img/icons/priority/2.svg",
+      "progress": "20",
+      "status": "In Progress",
+      "type": "Improvement",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "Google Analytics is installed and correctly configured.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "16",
+      "taskId": "Task-016",
+      "title": "Alternative text:",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "progress": "10",
+      "status": "In Progress",
+      "type": "Incident",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "Alternative text: All <img> have an alternative text which describe the image visually.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "17",
+      "taskId": "Task-017",
+      "title": "Add title on all pages",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "0",
+      "status": "To Do",
+      "type": "Bug",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "It is a known fact that the right styleguide can significantly increase development speed, debugging, and the implementation of new features in legacy code. Sadly, most CSS codebases are sometimes developed without any structure or naming conventions. This leads to an unmaintainable CSS codebase in the long term.",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "id": "18",
+      "taskId": "Task-018",
+      "title": "Pat the cat",
+      "assigneeId": "4",
+      "assignee": "Anna Makhankova",
+      "assigneeAvatarUrl": "img/avatar/00004.jpg",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "progress": "0",
+      "status": "To Do",
+      "type": "Story",
+      "reporterId": "3",
+      "reporter": "Oleksandr Koval",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "priorityIcon": "img/icons/confused.svg",
+      "description": "Just pat the cat. Now!",
+      "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    }
+  ],
+  "shortTasks": [
+    {
+      "id": "1",
+      "taskId": "Task-001",
+      "title": "Fix validation fields",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "reporterId": "3",
+      "priority": "4",
+      "priorityId": "3",
+      "priorityDescription": "Low",
+      "priorityUrl": "img/icons/priority/4.svg",
+      "progress": "0",
+      "type": "Bug",
+      "status": "To Do"
+    },
+    {
+      "id": "2",
+      "taskId": "Task-002",
+      "title": "Screening Quiz",
+      "assigneeId": "2",
+      "assignee": "Oleksiy Kozachenko",
+      "assigneeAvatarUrl": "img/avatar/00002.jpg",
+      "reporterId": "3",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "0",
+      "type": "Story",
+      "status": "To Do"
+    },
+    {
+      "id": "3",
+      "taskId": "Task-003",
+      "title": "Review Web Standards",
+      "assigneeId": "5",
+      "assignee": "Rita Novak",
+      "assigneeAvatarUrl": "img/avatar/00005.jpg",
+      "reporterId": "3",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "progress": "0",
+      "type": "Improvement",
+      "status": "To Do"
+    },
+    {
+      "id": "4",
+      "taskId": "Task-004",
+      "title": "Gathering of information related to site content",
+      "assigneeId": "9",
+      "assignee": "Anton Galay",
+      "assigneeAvatarUrl": "img/avatar/00009.jpg",
+      "reporterId": "3",
+      "priority": "4",
+      "priorityId": "3",
+      "priorityDescription": "Low",
+      "priorityUrl": "img/icons/priority/4.svg",
+      "progress": "0",
+      "type": "Incident",
+      "status": "To Do"
+    },
+    {
+      "id": "5",
+      "taskId": "Task-005",
+      "title": "Fix browser compatibility",
+      "assigneeId": "4",
+      "assignee": "Anna Makhankova",
+      "assigneeAvatarUrl": "img/avatar/00004.jpg",
+      "reporterId": "3",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "10",
+      "type": "Bug",
+      "status": "In Progress"
+    },
+    {
+      "id": "6",
+      "taskId": "Task-006",
+      "title": "Quiz Recall",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "reporterId": "6",
+      "priority": "2",
+      "priorityId": "1",
+      "priorityDescription": "High",
+      "priorityUrl": "img/icons/priority/2.svg",
+      "progress": "50",
+      "type": "Story",
+      "status": "In Progress"
+    },
+    {
+      "id": "7",
+      "taskId": "Task-007",
+      "title": "Use rel canonical to avoid duplicate content",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "reporterId": "3",
+      "priority": "5",
+      "priorityId": "4",
+      "priorityDescription": "Very Low",
+      "priorityUrl": "img/icons/priority/5.svg",
+      "progress": "99",
+      "type": "Improvement",
+      "status": "Verify"
+    },
+    {
+      "id": "8",
+      "taskId": "Task-008",
+      "title": "Stylelint",
+      "assigneeId": "5",
+      "assignee": "Rita Novak",
+      "assigneeAvatarUrl": "img/avatar/00005.jpg",
+      "reporterId": "3",
+      "priority": "2",
+      "priorityId": "1",
+      "priorityDescription": "High",
+      "priorityUrl": "img/icons/priority/2.svg",
+      "progress": "99",
+      "type": "Bug",
+      "status": "Verify"
+    },
+    {
+      "id": "9",
+      "taskId": "Task-009",
+      "title": "App crash caused by button click",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "reporterId": "6",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "99",
+      "type": "Bug",
+      "status": "Verify",
+      "description": "This is a bug that QA testers will likely find in every mobile app they test. It is like a “time-bomb” hidden in your app, mostly behind buttons that are not used so often by users. But when the button is pressed, it can severely mess up the app’s functionality. Buttons that are not crucial for the running of the app can often be overlooked by developers. Such buttons might be found, for example, in an app’s account setting, profile editing mode or used for adding pictures to user profile.",
+      "reporter": "Martyn Mossi (admin)",
+      "reporterAvatarUrl": "img/avatar/00006.jpg"
+    },
+    {
+      "id": "10",
+      "taskId": "Task-010",
+      "title": "Limited Backup",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "reporterId": "3",
+      "priority": "4",
+      "priorityId": "3",
+      "priorityDescription": "Low",
+      "priorityUrl": "img/icons/priority/4.svg",
+      "progress": "100",
+      "type": "Story",
+      "status": "Done"
+    },
+    {
+      "id": "11",
+      "taskId": "Task-011",
+      "title": "Add RSS link",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "reporterId": "3",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "100",
+      "type": "Improvement",
+      "status": "Done"
+    },
+    {
+      "id": "12",
+      "taskId": "Task-012",
+      "title": "Webfont loader",
+      "assigneeId": "4",
+      "assignee": "Anna Makhankova",
+      "assigneeAvatarUrl": "img/avatar/00004.jpg",
+      "reporterId": "3",
+      "priority": "2",
+      "priorityId": "1",
+      "priorityDescription": "High",
+      "priorityUrl": "img/icons/priority/2.svg",
+      "progress": "100",
+      "type": "Incident",
+      "status": "Done"
+    },
+    {
+      "id": "13",
+      "taskId": "Task-013",
+      "title": "Mouse “hover” pop-ups and other features aren’t working on Edge",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "reporterId": "3",
+      "priority": "4",
+      "priorityId": "3",
+      "priorityDescription": "Low",
+      "priorityUrl": "img/icons/priority/4.svg",
+      "progress": "100",
+      "type": "Bug",
+      "status": "Done"
+    },
+    {
+      "id": "14",
+      "taskId": "Task-014",
+      "title": "Edit user details",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "reporterId": "3",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "progress": "50",
+      "type": "Story",
+      "status": "In Progress"
+    },
+    {
+      "id": "15",
+      "taskId": "Task-015",
+      "title": "Google Analytics",
+      "assigneeId": "4",
+      "assignee": "Anna Makhankova",
+      "assigneeAvatarUrl": "img/avatar/00004.jpg",
+      "reporterId": "3",
+      "priority": "2",
+      "priorityId": "1",
+      "priorityDescription": "High",
+      "priorityUrl": "img/icons/priority/2.svg",
+      "progress": "20",
+      "type": "Improvement",
+      "status": "In Progress"
+    },
+    {
+      "id": "16",
+      "taskId": "Task-016",
+      "title": "Alternative text",
+      "assigneeId": "7",
+      "assignee": "Yuriy Tkach",
+      "assigneeAvatarUrl": "img/avatar/00007.jpg",
+      "reporterId": "3",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "progress": "10",
+      "type": "Incident",
+      "status": "In Progress"
+    },
+    {
+      "id": "17",
+      "taskId": "Task-017",
+      "title": "Add title on all pages",
+      "assigneeId": "1",
+      "assignee": "Ivan Shevchenko",
+      "assigneeAvatarUrl": "img/avatar/00001.jpg",
+      "reporterId": "3",
+      "priority": "1",
+      "priorityId": "0",
+      "priorityDescription": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg",
+      "progress": "0",
+      "type": "Bug",
+      "status": "To Do"
+    },
+    {
+      "id": "18",
+      "taskId": "Task-018",
+      "title": "Pat the cat",
+      "assigneeId": "4",
+      "assignee": "Anna Makhankova",
+      "assigneeAvatarUrl": "img/avatar/00004.jpg",
+      "reporterId": "3",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "progress": "0",
+      "type": "Story",
+      "status": "To Do"
+    }
+  ],
+  "taskStatuses": [
+    {
+      "id": "0",
+      "status": "To Do"
+    },
+    {
+      "id": "1",
+      "status": "In Progress"
+    },
+    {
+      "id": "2",
+      "status": "Verify"
+    },
+    {
+      "id": "3",
+      "status": "Done"
+    }
+  ],
+  "taskTypes": [
+    {
+      "id": "0",
+      "type": "Bug"
+    },
+    {
+      "id": "1",
+      "type": "Story"
+    },
+    {
+      "id": "2",
+      "type": "Improvement"
+    },
+    {
+      "id": "3",
+      "type": "Incident"
+    }
+  ],
+  "taskPriorities": [
+    {
+      "id": "0",
+      "priority": "1",
+      "description": "Asap",
+      "priorityUrl": "img/icons/priority/1.svg"
+    },
+    {
+      "id": "1",
+      "priority": "2",
+      "description": "High",
+      "priorityUrl": "img/icons/priority/2.svg"
+    },
+    {
+      "id": "2",
+      "priority": "3",
+      "description": "Average",
+      "priorityUrl": "img/icons/priority/3.svg"
+    },
+    {
+      "id": "3",
+      "priority": "4",
+      "description": "Low",
+      "priorityUrl": "img/icons/priority/4.svg"
+    },
+    {
+      "id": "4",
+      "priority": "5",
+      "description": "Very Low",
+      "priorityUrl": "img/icons/priority/5.svg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userName": "Ivan Shevchenko",
+      "userAvatarUrl": "img/avatar/00001.jpg",
+      "userRole": "User"
+    },
+    {
+      "id": "2",
+      "userName": "Oleksiy Kozachenko",
+      "userAvatarUrl": "img/avatar/00002.jpg",
+      "userRole": "User"
+    },
+    {
+      "id": "3",
+      "userName": "Oleksandr Koval (admin)",
+      "userAvatarUrl": "img/avatar/00003.jpg",
+      "userRole": "Admin"
+    },
+    {
+      "id": "4",
+      "userName": "Anna Makhankova",
+      "userAvatarUrl": "img/avatar/00004.jpg",
+      "userRole": "User"
+    },
+    {
+      "id": "5",
+      "userName": "Rita Novak",
+      "userAvatarUrl": "img/avatar/00005.jpg",
+      "userRole": "User"
+    },
+    {
+      "id": "6",
+      "userName": "Martyn Mossi (admin)",
+      "userAvatarUrl": "img/avatar/00006.jpg",
+      "userRole": "Admin"
+    },
+    {
+      "id": "7",
+      "userName": "Yuriy Tkach",
+      "userAvatarUrl": "img/avatar/00007.jpg",
+      "userRole": "User"
+    },
+    {
+      "id": "8",
+      "userName": "Ian Backpack",
+      "userAvatarUrl": "img/avatar/00008.jpg",
+      "userRole": "User"
+    },
+    {
+      "id": "9",
+      "userName": "Anton Galay",
+      "userAvatarUrl": "img/avatar/00009.jpg",
+      "userRole": "User"
+    },
+    {
+      "id": "10",
+      "userName": "Margarita Dovgal",
+      "userAvatarUrl": "img/avatar/00010.jpg",
+      "userRole": "User"
+    },
+    {
+      "userName": "Ivan Petrov (admin)",
+      "userAvatarUrl": "http://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/durchschnittsgesichter/m(01-32)_gr.jpg",
+      "userRole": "Admin",
+      "id": "1x1SI4p"
+    }
+  ],
+  "lastTaskNumber": {
+    "number": "19"
+  },
+  "comments": [
+    {
+      "id": "1",
+      "taskId": "1",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "2",
+      "taskId": "1",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "3",
+      "taskId": "1",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "4",
+      "taskId": "1",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "5",
+      "taskId": "1",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "6",
+      "taskId": "1",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "7",
+      "taskId": "2",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "8",
+      "taskId": "2",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "9",
+      "taskId": "2",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "10",
+      "taskId": "2",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "11",
+      "taskId": "2",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "12",
+      "taskId": "2",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "13",
+      "taskId": "3",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "14",
+      "taskId": "3",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "15",
+      "taskId": "3",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "16",
+      "taskId": "3",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "17",
+      "taskId": "3",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "18",
+      "taskId": "3",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "19",
+      "taskId": "4",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "20",
+      "taskId": "4",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "21",
+      "taskId": "4",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "22",
+      "taskId": "4",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "23",
+      "taskId": "4",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "24",
+      "taskId": "4",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "25",
+      "taskId": "5",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "26",
+      "taskId": "5",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "27",
+      "taskId": "5",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "28",
+      "taskId": "5",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "29",
+      "taskId": "5",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "30",
+      "taskId": "5",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "31",
+      "taskId": "6",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "32",
+      "taskId": "6",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "33",
+      "taskId": "6",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "34",
+      "taskId": "6",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "35",
+      "taskId": "6",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "36",
+      "taskId": "6",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "37",
+      "taskId": "7",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "38",
+      "taskId": "7",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "39",
+      "taskId": "7",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "40",
+      "taskId": "7",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "41",
+      "taskId": "7",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "42",
+      "taskId": "7",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "43",
+      "taskId": "8",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "44",
+      "taskId": "8",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "45",
+      "taskId": "8",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "46",
+      "taskId": "8",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "47",
+      "taskId": "8",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "48",
+      "taskId": "8",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "49",
+      "taskId": "9",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "50",
+      "taskId": "9",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "51",
+      "taskId": "9",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "52",
+      "taskId": "9",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "53",
+      "taskId": "9",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "54",
+      "taskId": "9",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "55",
+      "taskId": "10",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "56",
+      "taskId": "10",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "57",
+      "taskId": "10",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "58",
+      "taskId": "10",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "59",
+      "taskId": "10",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "60",
+      "taskId": "10",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "61",
+      "taskId": "11",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "62",
+      "taskId": "11",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "63",
+      "taskId": "11",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "64",
+      "taskId": "11",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "65",
+      "taskId": "11",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "66",
+      "taskId": "11",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "67",
+      "taskId": "12",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "68",
+      "taskId": "12",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "69",
+      "taskId": "12",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "70",
+      "taskId": "12",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "71",
+      "taskId": "12",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "72",
+      "taskId": "12",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "73",
+      "taskId": "13",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "74",
+      "taskId": "13",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "75",
+      "taskId": "13",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "76",
+      "taskId": "13",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "77",
+      "taskId": "13",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "78",
+      "taskId": "13",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "79",
+      "taskId": "14",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "80",
+      "taskId": "14",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "81",
+      "taskId": "14",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "82",
+      "taskId": "14",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "83",
+      "taskId": "14",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "84",
+      "taskId": "14",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "85",
+      "taskId": "15",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "86",
+      "taskId": "15",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "87",
+      "taskId": "15",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "88",
+      "taskId": "15",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "89",
+      "taskId": "15",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "90",
+      "taskId": "15",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "91",
+      "taskId": "16",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "92",
+      "taskId": "16",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "93",
+      "taskId": "16",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "94",
+      "taskId": "16",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "95",
+      "taskId": "16",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "96",
+      "taskId": "16",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "97",
+      "taskId": "17",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "98",
+      "taskId": "17",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "99",
+      "taskId": "17",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "100",
+      "taskId": "17",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "101",
+      "taskId": "17",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "102",
+      "taskId": "17",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "id": "103",
+      "taskId": "18",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well."
+    },
+    {
+      "id": "104",
+      "taskId": "18",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "In November 1996, Netscape submitted JavaScript to Ecma International to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. This led to the official release of the language specification ECMAScript published in the first edition of the ECMA-262 standard in June 1997, with JavaScript being the most well known of the implementations. ActionScript and JScript are other well-known implementations of ECMAScript."
+    },
+    {
+      "id": "105",
+      "taskId": "18",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code."
+    },
+    {
+      "id": "106",
+      "taskId": "18",
+      "dateAdded": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Unlike many object-oriented languages, there is no distinction between a function definition and a method definition. Rather, the distinction occurs during function calling; when a function is called as a method of an object, the function's local this keyword is bound to that object for that invocation."
+    },
+    {
+      "id": "107",
+      "taskId": "18",
+      "dateAdded": "Tue Nov 28 2017 17:45:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Whereas explicit function-based delegation does cover composition in JavaScript, implicit delegation already happens every time the prototype chain is walked in order to, e.g., find a method that might be related to but is not directly owned by an object. Once the method is found it gets called within this object's context. Thus inheritance in JavaScript is covered by a delegation automatism that is bound to the prototype property of constructor functions."
+    },
+    {
+      "id": "108",
+      "taskId": "18",
+      "dateAdded": "Tue Nov 28 2017 17:55:48 GMT+0200 (EET)",
+      "userId": "",
+      "userName": "Oleksandr Koval",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "Like many scripting languages, arrays and objects (associative arrays in other languages) can each be created with a succinct shortcut syntax. In fact, these literals form the basis of the JSON data format."
+    },
+    {
+      "dateAdded": "Tue Jan 09 2018 15:56:29 GMT+0200 (EET)",
+      "userId": "1",
+      "userName": "Ivan Shevchenko",
+      "userPhotoUrl": "img/avatar/00001.jpg",
+      "comment": "new",
+      "taskId": "5",
+      "id": "n5pEHwk"
+    },
+    {
+      "dateAdded": "Tue Jan 09 2018 16:02:28 GMT+0200 (EET)",
+      "userId": "1",
+      "userName": "Ivan Shevchenko",
+      "userPhotoUrl": "img/avatar/00001.jpg",
+      "comment": "new1",
+      "taskId": "5",
+      "id": "PAxdyIs"
+    },
+    {
+      "dateAdded": "Tue Jan 09 2018 16:02:33 GMT+0200 (EET)",
+      "userId": "1",
+      "userName": "Ivan Shevchenko",
+      "userPhotoUrl": "img/avatar/00001.jpg",
+      "comment": "new3",
+      "taskId": "5",
+      "id": "neVz0FM"
+    },
+    {
+      "dateAdded": "Tue Jan 09 2018 16:05:24 GMT+0200 (EET)",
+      "userId": "1",
+      "userName": "Ivan Shevchenko",
+      "userPhotoUrl": "img/avatar/00001.jpg",
+      "comment": "sdfsdfsdf",
+      "taskId": "5",
+      "id": "NOh3QyO"
+    },
+    {
+      "dateAdded": "Wed Jan 10 2018 00:39:53 GMT+0200 (EET)",
+      "userId": "1x1SI4p",
+      "userName": "Ivan Petrov (admin)",
+      "userPhotoUrl": "http://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/durchschnittsgesichter/m(01-32)_gr.jpg",
+      "comment": "new",
+      "taskId": "5",
+      "id": "WyVmcLm"
+    },
+    {
+      "dateAdded": "Wed Jan 10 2018 14:02:18 GMT+0200 (Eastern Europe Standard Time)",
+      "userId": "3",
+      "userName": "Oleksandr Koval (admin)",
+      "userPhotoUrl": "img/avatar/00003.jpg",
+      "comment": "This comments was added by IE",
+      "taskId": "15",
+      "id": "r58iEtn"
+    },
+    {
+      "dateAdded": "Mon Jan 15 2018 01:03:09 GMT+0200 (Eastern Europe Standard Time)",
+      "userId": "6",
+      "userName": "Martyn Mossi (admin)",
+      "userPhotoUrl": "img/avatar/00006.jpg",
+      "comment": "test test",
+      "taskId": "2",
+      "id": "TdrtPlx"
+    }
+  ],
+  "attachments": [
+    {
+      "id": "1",
+      "taskId": "2",
+      "url": "attachments/5.jpg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "2",
+      "taskId": "2",
+      "url": "attachments/6.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "3",
+      "taskId": "2",
+      "url": "attachments/7.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "4",
+      "taskId": "3",
+      "url": "attachments/8.jpg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "5",
+      "taskId": "3",
+      "url": "attachments/9.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "6",
+      "taskId": "3",
+      "url": "attachments/10.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "7",
+      "taskId": "4",
+      "url": "attachments/11.jpg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "8",
+      "taskId": "5",
+      "url": "attachments/12.jpg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "9",
+      "taskId": "5",
+      "url": "attachments/13.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "10",
+      "taskId": "5",
+      "url": "attachments/14.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "11",
+      "taskId": "6",
+      "url": "attachments/15.jpg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "12",
+      "taskId": "6",
+      "url": "attachments/16.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "13",
+      "taskId": "6",
+      "url": "attachments/17.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "14",
+      "taskId": "7",
+      "url": "attachments/18.jpg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "15",
+      "taskId": "7",
+      "url": "attachments/19.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "16",
+      "taskId": "7",
+      "url": "attachments/20.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "17",
+      "taskId": "7",
+      "url": "attachments/1.jpeg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "18",
+      "taskId": "8",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "19",
+      "taskId": "8",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "20",
+      "taskId": "8",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "21",
+      "taskId": "8",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "22",
+      "taskId": "9",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "23",
+      "taskId": "9",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "24",
+      "taskId": "9",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "25",
+      "taskId": "9",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "26",
+      "taskId": "10",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "27",
+      "taskId": "10",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "28",
+      "taskId": "10",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "29",
+      "taskId": "10",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "26",
+      "taskId": "11",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "27",
+      "taskId": "11",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "28",
+      "taskId": "11",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "29",
+      "taskId": "11",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "30",
+      "taskId": "12",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "31",
+      "taskId": "12",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "32",
+      "taskId": "12",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "33",
+      "taskId": "12",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "34",
+      "taskId": "13",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "35",
+      "taskId": "13",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "36",
+      "taskId": "13",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "37",
+      "taskId": "13",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "38",
+      "taskId": "14",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "39",
+      "taskId": "14",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "40",
+      "taskId": "14",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "41",
+      "taskId": "14",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "42",
+      "taskId": "15",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "43",
+      "taskId": "15",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "44",
+      "taskId": "15",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "45",
+      "taskId": "15",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "46",
+      "taskId": "16",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "47",
+      "taskId": "16",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "48",
+      "taskId": "16",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "49",
+      "taskId": "16",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "50",
+      "taskId": "17",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "51",
+      "taskId": "17",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "52",
+      "taskId": "17",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "53",
+      "taskId": "17",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "id": "54",
+      "taskId": "18",
+      "url": "attachments/1.jpeg",
+      "fileName": "some good image name"
+    },
+    {
+      "id": "55",
+      "taskId": "18",
+      "url": "attachments/2.jpg",
+      "fileName": "but I'm no able"
+    },
+    {
+      "id": "56",
+      "taskId": "18",
+      "url": "attachments/3.jpg",
+      "fileName": "to create any one :("
+    },
+    {
+      "id": "57",
+      "taskId": "18",
+      "url": "attachments/4.jpg",
+      "fileName": "he is so cute, isn't he?"
+    },
+    {
+      "url": "https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg",
+      "fileName": "new cat",
+      "taskId": "5",
+      "id": "0R99HOb"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/dGFSjKuJfrI/maxresdefault.jpg",
+      "fileName": "some very important caption",
+      "taskId": "15",
+      "id": "K_IGRo_"
+    }
+  ]
+}

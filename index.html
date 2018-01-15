@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Tracking System</title>
+    <meta name="description" content="My first task tracking system">
+    <link rel="stylesheet" href="styles/main.css">
+    <!--<link href="fonts/barlow.woff" rel="stylesheet">-->
+    <!--<link href="fonts/barlow1.woff2" rel="stylesheet">-->
+
+    <script src="libs/jquery-3.2.1.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<h1>My first task tracking system</h1>
+<div class="header-outer">
+    <div class="header__container">
+        <nav class="nav">
+            <ul class="navigation">
+                <li class="main-menu">
+                    <a class="main-menu__link" href="#">Task board</a>
+                </li>
+                <li class="main-menu">
+                    <a class="main-menu__link">Add...</a>
+                    <ul class="dropdown">
+                        <li class="submenu admin"><a class="submenu__link" href="#add-user">New user</a></li>
+                        <li class="submenu"><a class="submenu__link" href="#edit-task" id="add-task-btn">New
+                            task</a></li>
+                    </ul>
+                </li>
+                <li class="main-menu hide" id="edit-current-task">
+                    <a class="main-menu__link" href="#">Edit current task</a>
+                </li>
+                <li class="main-menu hide" id="filters">
+                    <a class="main-menu__link">Filter</a>
+                    <ul class="dropdown">
+                        <li class="submenu"><a class="submenu__link" href="#assigned-to-me">Assigned to me</a>
+                        </li>
+                        <li class="submenu"><a class="submenu__link" href="#reported-by-me">Reported by me</a>
+                        </li>
+                        <li class="submenu"><a class="submenu__link" href="#show-high-priority-tasks">High
+                            priority tasks</a></li>
+                    </ul>
+                </li>
+                <li class="main-menu">
+                    <a class="main-menu__link" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <img class="header-login__icon" src="img/icons/login.svg" title="Login" alt="Login">
+            <div class="header-login__title"><a class="main-menu__link" id="login-button"
+                                                href="#login">Login</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="main-container">
+
+    <!--Task Board-->
+    <div class="task-board" id="task-board-view"></div>
+
+    <!--Opened Task View-->
+    <div class="opened-task hide" id="opened-task-view">
+
+        <div class="opened-task">
+            <div class="opened-task__header">
+                <p><span class="topic">id: </span><span id="task_id"></span></p>
+                <h3><span class="topic">Title: </span><span id="task_title"></span></h3>
+                <hr>
+            </div>
+
+            <div class="opened-task__container">
+                <div>
+                    <p><span class="topic">Status: </span><span id="task_status"></span></p>
+                    <p><span class="topic">Type: </span><span id="task_type"></span></p>
+                    <p><span class="topic">Priority: </span><span id="task_priority"></span></p>
+                </div>
+                <hr>
+                <div>
+                    <h3><span class="topic">Description: </span></h3>
+                    <p id="task_description"></p>
+                </div>
+                <hr>
+                <div>
+                    <p><span class="topic">Gallery: </span></p>
+                    <div id="gallery" class="gallery">
+                        <a>
+                            <div class="gallery__wrapper">
+                                <div class="gallery__thumbnail"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="gallery-modal" class="modal">
+                        <span id="close-gallery-modal" class="modal_close-btn">&times;</span>
+                        <img class="modal__content" id="modal-image" title="" alt="">
+                        <a class="prev" id="prev-modal-image">&#10094;</a>
+                        <a class="next" id="next-modal-image">&#10095;</a>
+                        <div id="caption"></div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <p><span class="topic">Comments: </span></p>
+                    <form class="add-comment" id="add-comment">
+                        <textarea name="comment" class="add-comment__textarea"
+                                  placeholder="Write your comment here..." required></textarea>
+                        <div class="add-comment__btn">
+                            <button type="submit" class="button">ok</button>
+                        </div>
+                    </form>
+
+                    <div class="comments__wrapper" id="comments">
+                    </div>
+                    <div class="center">
+                        <div class="pagination" id="pagination">
+                            <a href="#" class="pagination__links" id="btn_prev" title="Previous page">
+                                &laquo;</a>
+                            <a href="#" class="pagination__links">1</a>
+                            <a href="#" class="pagination__links active">2</a>
+                            <a href="#" class="pagination__links">3</a>
+                            <a href="#" class="pagination__links" id="btn_next" title="Next page">
+                                &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="opened-task__aside-block">
+                <div class="person-aside-block assignee-block">
+                    <div class="topic">Assignee:</div>
+                    <div class="person--scale">
+                        <img class="person-aside-block__img" src=""
+                             title="" alt="" id="task_assignee">
+                        <a class="topic__link" href="" id="task_assignee_name"></a>
+                    </div>
+                </div>
+                <div class="person-aside-block">
+                    <span class="topic">Reporter:</span>
+                    <img class="person-aside-block__img" src=""
+                         title="" alt="" id="task_reporter">
+                    <a class="topic__link" href="" id="task_reporter_name"></a>
+                </div>
+                <hr>
+                <div class="progress-bar">
+                    <div class="progress-bar__text">Progress:</div>
+                    <div class="progress-bar__text" id="task_progress"> %</div>
+                    <div class="progress-bar__container">
+                        <div class="progress-bar__colored-line" id="task_progress_bar"></div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <!--Login Modal-->
+    <div class="modal" id="login-modal">
+        <div class="modal__container modal__container--smaller">
+            <span id="close-login" class="modal_close-btn">&times;</span>
+            <form class="modal__form" id="login">
+                <h2>Login</h2>
+                <label class="form-label">Find your name:
+                    <select name="user" id="choose-user">
+                    </select>
+                </label><br>
+
+                <p>If you can not find your name in list, please, check your access with your manager.</p>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Edit Task Modal-->
+    <div class="modal" id="adding-task-modal">
+        <div class="modal__container">
+            <span id="close-add-task" class="modal_close-btn">&times;</span>
+            <form class="modal__form" id="edit-task">
+                <h2>Edit task</h2>
+                <label class="form-label">Title: <input name="title" type="text" size="25"
+                                                        placeholder="What shall I do?"
+                                                        id="add-task-title"></label>
+
+                <label class="form-label">Status:
+                    <select name="status" id="add-task-status">
+                    </select>
+                </label>
+
+                <label class="form-label">Type:
+                    <select name="type" id="add-task-types">
+                    </select>
+                </label>
+
+                <label class="form-label">Priority:
+                    <select name="priority" id="add-task-priorities">
+                    </select>
+                </label>
+
+                <label class="form-label">Progress:
+                    <input type="number" min="0" max="100" value="0" name="progress" id="add-task-progress">
+                </label>
+
+                <label class="form-label">Assignee:
+                    <select name="assignee" id="add-task-assignee">
+                    </select>
+                </label>
+
+                <br>
+
+                <label class="add-task__description form-label">Description:
+                    <textarea name="description" id="add-task-description" placeholder="Add description..."
+                              required>
+                    </textarea>
+                </label>
+
+                <br>
+
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Add New User Modal-->
+    <div class="modal" id="adding-user-modal">
+        <div class="modal__container">
+            <span id="close-add-user" class="modal_close-btn">&times;</span>
+            <form class="modal__form" enctype="multipart/form-data" method="post" id="add-user">
+                <h2>Add new user</h2>
+                <label class="form-label">Name:
+                    <input type="text" size="25" placeholder="First Name and Last Name" name="name" required>
+                </label>
+
+                <label class="form-label">Role:
+                    <select name="role">
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </label>
+
+                <label class="form-label">Photo URL:
+                    <input type="text" size="25" placeholder="Add user avatar URL" name="photo" required>
+                </label>
+
+                <br>
+
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Add New Attachment Modal-->
+    <div class="modal" id="adding-attachment-modal">
+        <div class="modal__container modal__container--smaller">
+            <span id="close-add-attachment" class="modal_close-btn">&times;</span>
+            <form class="modal__form" enctype="multipart/form-data" method="post" id="add-attachment-form">
+                <h2>Add attachment</h2>
+
+                <div class="gallery__wrapper gallery__wrapper--preview">
+                    <div class="gallery__thumbnail"></div>
+                </div>
+
+                <label class="form-label">Picture Url:
+                    <input type="text" name="url" required>
+                </label>
+
+                <br>
+
+                <label class="form-label">Caption:
+                    <input type="text" name="caption" required>
+                </label>
+
+                <button value="add-more-attachment">Add more</button>
+
+                <br>
+
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Contacts-->
+    <div class="contacts hide" id="contacts-view">
+        <div>
+            <h2>Contacts:</h2>
+            <p><span class="topic">Phone: </span>+380 (44) 380 44 44</p>
+            <p><span class="topic">E-mail: </span>e-mail@gmail.com</p>
+            <p><span class="topic">Address:  </span>18 Kudryashova Street, 03035 Kyiv, Ukraine</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.568161440898!2d30.4850558154387!3d50.43051697947266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee9e88c9d2f%3A0xd0f3c8358d5dcf16!2z0LLRg9C70LjRhtGPINCa0YPQtNGA0Y_RiNC-0LLQsCwgMTgsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1515103475841"
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!--Error Page-->
+    <div class="error-page hide" id="error-page-view">
+        <div>
+            <h5>Error 404</h5>
+            <h4>Page Not Found</h4>
+            <h3>I'm sorry...</h3>
+            <h3>The page you are looking for was moved, removed, renamed or might never existed.</h3>
+            <br>
+            <a class="button" href="#">Back to homepage</a>
+        </div>
+    </div>
+
+    <!--Unauthorized Page-->
+    <div class="error-page hide" id="unauthorized-page-view">
+        <div>
+            <h5>Error 401</h5>
+            <h4>Unauthorized</h4>
+            <h3>I'm sorry...</h3>
+            <h3>The request has not been applied because it lacks valid authentication credentials for the
+                target resource.</h3>
+            <br>
+            <a class="button" href="#login">Login</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-outer">
+    <div class="footer">
+        <p class="footer__text">Place where some useful information can be located</p>
+    </div>
+</div>
+
+</body>
+</html>
+

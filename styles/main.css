@@ -1,0 +1,730 @@
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Barlow Semi Condensed Regular'), local('BarlowSemiCondensed-Regular'), url(../fonts/barlow1.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Barlow Semi Condensed Regular'), local('BarlowSemiCondensed-Regular'), url(../fonts/barlow.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #2A2A2A;
+    margin: 0;
+    min-width: 400px;
+}
+
+h1 {
+    font-size: 0;
+}
+
+h4 {
+    font-size: 2.3em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h5 {
+    font-size: 3.9em;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: #E6896A;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+label {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Header and Footer */
+
+.header-outer {
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.header__container,
+.footer {
+    background-color: #2A2A2A;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.header__container a {
+    color: white;
+}
+
+.footer-outer {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer {
+    align-content: center;
+    padding: 2px;
+}
+
+.footer__text {
+    color: #666666;
+    text-align: center;
+}
+
+/* Main Navigation */
+
+.nav {
+    position: relative;
+}
+
+.navigation {
+    position: relative;
+    float: left;
+}
+
+.main-menu,
+.submenu {
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+.main-menu {
+    padding: 0 10px;
+    border-right: 1px solid #E6896A;
+    cursor: pointer;
+}
+
+.main-menu:last-child {
+    border-right: none;
+}
+
+.main-menu__link {
+    display: inline-block;
+    color: white;
+}
+
+/* Navigation */
+
+.submenu {
+    background-color: #2A2A2A;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.submenu__link {
+    color: white;
+    padding: 8px 16px;
+}
+
+.submenu__link:hover {
+    color: #E6896A;
+}
+
+.main-menu:hover > .dropdown {
+    /* these styles are very important for make the drop-down to appear on hover */
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown {
+    list-style: none;
+    padding: 17px 0;
+    left: 0;
+    /* these styles are very important for make the drop-down to appear on hover */
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 99999;
+    width: 180px;
+}
+
+.submenu {
+    width: 100%;
+    border-top: 1px solid #E6896A;
+}
+
+.submenu__link {
+    background: none;
+    display: inline-block;
+    border: 0 none;
+    float: left;
+    width: 150px;
+}
+
+/* Login */
+
+.login {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-login__icon {
+    height: 20px;
+    margin: 16px 0;
+}
+
+.header-login__title {
+    margin: 16px;
+    padding-right: 20px;
+}
+
+/* Main container */
+
+.main-container {
+    width: 100%;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+button,
+.button {
+    position: relative;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: #666666;
+    background: lightgray;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacts,
+.error-page {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.map {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    width: 600px;
+    height: 300px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Task board */
+
+.task-board {
+    display: flex;
+    width: 98%;
+    margin: 1%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.column {
+    background: #EDEDED;
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.5);
+    border-radius: 4px;
+    min-width: 200px;
+    flex-grow: 1;
+    margin: 4px;
+    width: 24%;
+}
+
+.column__title {
+    margin: 4px;
+}
+
+.task {
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.5);
+    border-radius: 4px;
+    margin: 2px;
+    padding: 4px;
+}
+
+.nowrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task__left-block {
+    width: 20px;
+    padding: 4px;
+}
+
+.priority-img {
+    width: 80%;
+    border-radius: 4px;
+}
+
+.task__content {
+    flex-grow: 1;
+    width: 70%;
+}
+
+.task-title {
+    font-weight: bold;
+    color: #666666;
+    font-size: larger;
+}
+
+.task__assignee-avatar {
+    border-radius: 4px;
+    width: 50px;
+}
+
+/* Edit task */
+
+.form-label {
+    display: inline-block;
+}
+
+.add-comment  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-comment__textarea {
+    margin-right: 20px;
+    width: calc(96% - 66px);
+}
+
+.add-comment__btn {
+    margin: -20px 0 0;
+}
+
+.add-task__description {
+    width: 90%;
+}
+
+input, textarea, select {
+    display: block;
+    padding: 5px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+textarea {
+    resize: both;
+    width: 100%;
+    height: 100px;
+}
+
+/* Opened Task */
+
+.opened-task {
+    width: 96%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opened-task__header {
+    width: 98%;
+    padding: 1%;
+}
+
+.opened-task__container {
+    float: left;
+    width: 78%;
+    padding: 1%;
+}
+
+.opened-task__aside-block {
+    float: left;
+    width: 18%;
+    padding: 1%;
+}
+
+.topic {
+    color: #666666;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.topic__link {
+    color: #E6896A;
+    text-decoration: none;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.gallery__wrapper {
+    width: 300px;
+    height: 300px;
+    background: white;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.5);
+    border-radius: 4px;
+    padding: 6px;
+    margin: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.gallery__thumbnail {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    /* Better case, but IE :( */
+    /*object-fit: cover;*/
+    /*-o-object-fit: cover;*/
+}
+
+.gallery__wrapper--preview {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+.person-aside-block,
+.person--scale {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid white;
+    padding: 4px;
+}
+
+.person-aside-block__img {
+    height: 30px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.progress-bar__container {
+    width: 100%;
+    height: 10px;
+    padding: 8px 0 0;
+    overflow: hidden;
+}
+
+.progress-bar__text {
+    color: #666666;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.progress-bar__colored-line {
+    background: linear-gradient(to right, #f48847 20px, #ffc84a, #a6c34c);
+    border-radius: 2px;
+    height: 100%;
+}
+
+/* Pagination */
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination__links {
+    color: #666666;
+    float: left;
+    padding: 8px 16px;
+    margin: 0 2px;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.5);
+    transition: background-color .3s;
+}
+
+.pagination__links.active {
+    background-color: #E6896A;
+    color: white;
+    border-radius: 4px;
+}
+
+.pagination__links:hover:not(.active) {
+    background-color: lightgray;
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+}
+
+/*Modal*/
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal__content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 70%;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background: white;
+    object-fit: contain;
+    -o-object-fit: contain;
+}
+
+.modal__container {
+    margin: auto;
+    display: block;
+    max-width: 60%;
+    max-height: 70%;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background: white;
+    overflow-y: auto;
+}
+
+.modal__container--smaller {
+    width: 600px;
+}
+
+.modal__form {
+    margin: 20px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* The Close Button */
+.modal_close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.add-attachment {
+    width: 300px;
+    height: 300px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.5);
+    border-radius: 4px;
+    padding: 6px;
+    margin: 6px 6px 0 0;
+}
+
+.border {
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+}
+
+.add-attachment__icon {
+    width: 20%;
+    position: relative;
+    top: 40%;
+    left: 40%;
+    opacity: 0.5;
+}
+
+/*Some scc events effects*/
+
+button:hover,
+.button:hover {
+    background: #E6896A;
+}
+
+.main-menu__link:hover {
+    color: #E6896A;
+}
+
+.main-menu__title:hover,
+.header-login:hover {
+    cursor: pointer;
+    color: #E6896A;
+}
+
+.task:hover,
+.gallery__wrapper:hover {
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    transform: scale(1.05);
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.task:active {
+    transition: 1s;
+    -webkit-transition: 1s;
+    transform: scale(3);
+    -webkit-transform: scale(10);
+    opacity: 0;
+}
+
+.add-attachment:hover {
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    transform: scale(1.05);
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.modal_close-btn:hover,
+.modal_close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* It is important do not relocate this upper*/
+
+.hide {
+    display: none;
+}
+
+.nav .admin,
+.nav .hide {
+    display: none;
+}
+
+.comment__info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.comment__info span {
+    color: #666666;
+}
+
+@media only screen and (orientation: portrait) {
+    .column {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .column {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+}
