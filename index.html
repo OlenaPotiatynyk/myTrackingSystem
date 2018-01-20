@@ -48,7 +48,8 @@
             </ul>
         </nav>
 
-        <div class="login">
+        <div class="header-login">
+            <p class="header-login__name" id="logged-in-user"></p>
             <img class="header-login__icon" src="img/icons/login.svg" title="Login" alt="Login">
             <div class="header-login__title"><a class="main-menu__link" id="login-button"
                                                 href="#login">Login</a></div>
@@ -94,7 +95,8 @@
                     </div>
                     <div id="gallery-modal" class="modal">
                         <span id="close-gallery-modal" class="modal_close-btn">&times;</span>
-                        <img class="modal__content" id="modal-image" title="" alt="">
+                        <img class="modal__content" id="modal-image" title="attachment" alt="attachment"
+                             src="attachments/1.jpeg">
                         <a class="prev" id="prev-modal-image">&#10094;</a>
                         <a class="next" id="next-modal-image">&#10095;</a>
                         <div id="caption"></div>
@@ -128,19 +130,21 @@
                 <hr>
             </div>
             <div class="opened-task__aside-block">
-                <div class="person-aside-block assignee-block">
-                    <div class="topic">Assignee:</div>
-                    <div class="person--scale">
-                        <img class="person-aside-block__img" src=""
-                             title="" alt="" id="task_assignee">
+                <div class="person-aside-block">
+                    <p class="person-aside-block__role">Assignee:</p>
+                    <div class="person-aside-block__person">
+                        <img class="person-aside-block__img" src="img/avatar/00001.jpg"
+                             title="assignee" alt="assignee" id="task_assignee">
                         <a class="topic__link" href="" id="task_assignee_name"></a>
                     </div>
                 </div>
                 <div class="person-aside-block">
-                    <span class="topic">Reporter:</span>
-                    <img class="person-aside-block__img" src=""
-                         title="" alt="" id="task_reporter">
-                    <a class="topic__link" href="" id="task_reporter_name"></a>
+                    <p class="person-aside-block__role">Reporter:</p>
+                    <div class="person-aside-block__person">
+                        <img class="person-aside-block__img" src="img/avatar/00001.jpg"
+                             title="reporter" alt="reporter" id="task_reporter">
+                        <a class="topic__link" href="" id="task_reporter_name"></a>
+                    </div>
                 </div>
                 <hr>
                 <div class="progress-bar">
@@ -289,8 +293,9 @@
             <p><span class="topic">Address:  </span>18 Kudryashova Street, 03035 Kyiv, Ukraine</p>
         </div>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.568161440898!2d30.4850558154387!3d50.43051697947266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee9e88c9d2f%3A0xd0f3c8358d5dcf16!2z0LLRg9C70LjRhtGPINCa0YPQtNGA0Y_RiNC-0LLQsCwgMTgsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1515103475841"
-                    frameborder="0" allowfullscreen></iframe>
+            <div id="map"></div>
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.568161440898!2d30.4850558154387!3d50.43051697947266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee9e88c9d2f%3A0xd0f3c8358d5dcf16!2z0LLRg9C70LjRhtGPINCa0YPQtNGA0Y_RiNC-0LLQsCwgMTgsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1515103475841"-->
+            <!--frameborder="0" allowfullscreen></iframe>-->
         </div>
     </div>
 
@@ -327,6 +332,9 @@
     </div>
 </div>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnxytmYfgGH7ByA2ORUw7v14OKFDs_H44&callback=initMap"
+        async defer>
+</script>
 </body>
 </html>
 

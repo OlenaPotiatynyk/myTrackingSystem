@@ -173,13 +173,15 @@ $(function () {
     $('#login').on('submit', function (e) {
         e.preventDefault();
         var form = $('form[id="login"]');
-        var user = form[0].elements.user.value;
-        localStorage.setItem('user', user);
+        var userId = form[0].elements.user.value;
+        localStorage.setItem('user', userId);
 
+        var user = getUserById(userId);
         enableAdminButton(user);
 
         $('#login-modal').css('display', 'none');
         $('#login-button').text('Logout');
+        $('#logged-in-user').text(user.userName);
         window.location.hash = '#';
     });
 });
@@ -187,11 +189,13 @@ $(function () {
 function verifyIfUserLoggedIn() {
     var currentUser = localStorage.getItem('user');
 
-    if (currentUser === null && getUserById(currentUser) !== null) {
+    if (currentUser === null) {
         window.location.hash = '#login';
     } else {
+        var user = getUserById(currentUser);
         $('#login-button').text('Logout');
-        enableAdminButton(currentUser);
+        $('#logged-in-user').text(user.userName);
+        enableAdminButton(user);
     }
 }
 
@@ -259,21 +263,21 @@ function generateTaskPage(taskId) {
     container.find('#task_progress').text(task.progress + '%');
     container.find('#task_progress_bar').attr('style', 'width:' + task.progress + '%');
 
-    container.find("#gallery").empty();
+    container.find('#gallery').empty();
     if (task.attachments !== undefined) {
         task.attachments.forEach(function (attachment) {
-            container.find("#gallery").append("<a href='#gallery/" + taskId + "/" + attachment.id + "'><div class=\"gallery__wrapper\">" +
-                "<div style='background-image: url(" + attachment.url
-                + "\' title=\"" + attachment.fileName
-                + "\" class=\"gallery__thumbnail\"></div></div></a>");
+            container.find('#gallery').append('<a href="#gallery/' + taskId + '/' + attachment.id + '"><div class=\"gallery__wrapper\">' +
+                '<div style="background-image: url(' + attachment.url
+                + ')\" title=\"' + attachment.fileName
+                + '\" class=\"gallery__thumbnail\"></div></div></a>');
         })
     }
 
-    container.find("#gallery").append("<a href='#add-attachment/" + taskId + "'>"
-        + "<div class=\"add-attachment\" title=\"Add attachment\">"
-        + "<div class=\"border\">"
-        + "<img src=\"img/icons/add-square-button.svg\" alt=\"Add attachment\""
-        + "title=\"Add attachment\" class=\"add-attachment__icon\"></div></div></a>");
+    container.find('#gallery').append('<a href="#add-attachment/' + taskId + '">'
+        + '<div class=\"add-attachment\" title=\"Add attachment\">'
+        + '<div class=\"border\">'
+        + '<img src=\"img/icons/add-square-button.svg\" alt=\"Add attachment\"'
+        + 'title=\"Add attachment\" class=\"add-attachment__icon\"></div></div></a>');
 
 
     renderComments(0);
@@ -282,8 +286,8 @@ function generateTaskPage(taskId) {
 function renderComments(page) {
     var taskId = window.location.hash.split('#task/')[1];
 
-    var commentsContainer = $(".opened-task").find("#comments");
-    var paginationContainer = $(".opened-task").find("#pagination");
+    var commentsContainer = $('.opened-task').find('#comments');
+    var paginationContainer = $('.opened-task').find('#pagination');
 
     commentsContainer.empty();
     paginationContainer.empty();
@@ -295,14 +299,14 @@ function renderComments(page) {
     var firstCommentNumber = page * 3;
     for (var i = firstCommentNumber; i < Math.min(firstCommentNumber + 3, comments.length); i++) {
         var comment = comments[i];
-        commentsContainer.append("<div class=\"comment\"><div class='comment__info'><img class='person-aside-block__img'" +
-            " src='" + comment.userPhotoUrl + "' title='" + comment.userName + "'><div> " + comment.userName + " <span><em>(" + comment.dateAdded
-            + ")</em></span>: </div></div>" + "<p>" + comment.comment + "</p></div>");
+        commentsContainer.append('<div class=\"comment\"><div class="comment__info"><img class="person-aside-block__img"' +
+            ' src="' + comment.userPhotoUrl + '" title="' + comment.userName + '"><div> ' + comment.userName + ' <span><em>(' + comment.dateAdded
+            + ')</em></span>: </div></div>' + '<p>' + comment.comment + '</p></div>');
     }
 
     var pagesNumber = Math.ceil(comments.length / 3);
     for (i = 1; i <= pagesNumber; i++) {
-        paginationContainer.append("<a class=\"pagination__links\" onclick='renderComments(" + (i - 1) + ")'>" + i + "</a>")
+        paginationContainer.append('<a class=\"pagination__links\" onclick="renderComments(' + (i - 1) + ')">' + i + '</a>')
     }
 }
 
@@ -342,8 +346,10 @@ function unhideNavButtons() {
 }
 
 function enableAdminButton(user) {
-    if (getUserById(user).userRole === 'Admin') {
-        $(".admin").removeClass('admin');
+    if (user.userRole === 'Admin') {
+        $(".admin").css('display', 'inline');
+    } else {
+        $(".admin").css('display', 'none');
     }
 }
 
@@ -420,4 +426,22 @@ function generateNewTaskId() {
 
     var lastTaskId = getLastTaskNumber().number;
     return 'Task-' + ++lastTaskId;
+}
+
+//google-map api
+function initMap() {
+    var coordinates = {
+        lat: 50.4305191,
+        lng: 30.4871098
+    };
+
+    var map = new google.maps.Map($('#map')[0], {
+        zoom: 16,
+        center: coordinates
+    });
+
+    var marker = new google.maps.Marker({
+        // position: coordinates,
+        map: map
+    });
 }
