@@ -34,12 +34,12 @@
       "priorityId": "0",
       "priorityDescription": "Asap",
       "priorityUrl": "img/icons/priority/1.svg",
-      "progress": "0",
-      "status": "To Do",
-      "type": "Story",
+      "progress": "45",
+      "status": "In Progress",
+      "type": "Bug",
       "reporterId": "3",
-      "reporter": "Oleksandr Koval",
-      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "reporter": "Oleksiy Kozachenko",
+      "reporterAvatarUrl": "img/avatar/00002.jpg",
       "priorityIcon": "img/icons/confused.svg",
       "description": "As the HR manager, I want to create a screening quiz so that I can understand whether I want to send possible recruits to the functional manager.",
       "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
@@ -107,8 +107,8 @@
       "status": "In Progress",
       "type": "Bug",
       "reporterId": "3",
-      "reporter": "Oleksandr Koval",
-      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "reporter": "Oleksiy Kozachenko",
+      "reporterAvatarUrl": "img/avatar/00002.jpg",
       "priorityIcon": "img/icons/confused.svg",
       "description": "Another very frequent problem is an app’s browser compatibility. With this in mind, our QA team tries to test on as many different browsers as possible, including older versions. We take user experience and preferences into consideration when deciding which browser(s) to give priority to during testing. From our personal experience, the most problematic browsers are Internet Explorer (different versions) and the older versions of Safari.",
       "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
@@ -415,6 +415,24 @@
       "createdDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
       "updatedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)",
       "resolvedDate": "Tue Nov 28 2017 17:35:48 GMT+0200 (EET)"
+    },
+    {
+      "taskId": "Task-20",
+      "title": "Test task",
+      "description": "some description",
+      "status": "To Do",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "type": "Story",
+      "assigneeId": "9",
+      "assignee": "Anton Galay",
+      "assigneeAvatarUrl": "img/avatar/00009.jpg",
+      "reporter": "Oleksandr Koval (admin)",
+      "reporterAvatarUrl": "img/avatar/00003.jpg",
+      "progress": "0",
+      "id": "mW7qTj9"
     }
   ],
   "shortTasks": [
@@ -446,9 +464,9 @@
       "priorityId": "0",
       "priorityDescription": "Asap",
       "priorityUrl": "img/icons/priority/1.svg",
-      "progress": "0",
-      "type": "Story",
-      "status": "To Do"
+      "progress": "45",
+      "type": "Bug",
+      "status": "In Progress"
     },
     {
       "id": "3",
@@ -708,6 +726,21 @@
       "progress": "0",
       "type": "Story",
       "status": "To Do"
+    },
+    {
+      "id": "mW7qTj9",
+      "taskId": "Task-20",
+      "title": "Test task",
+      "assigneeId": "9",
+      "assignee": "Anton Galay",
+      "assigneeAvatarUrl": "img/avatar/00009.jpg",
+      "priority": "3",
+      "priorityId": "2",
+      "priorityDescription": "Average",
+      "priorityUrl": "img/icons/priority/3.svg",
+      "progress": "0",
+      "type": "Story",
+      "status": "To Do"
     }
   ],
   "taskStatuses": [
@@ -847,7 +880,7 @@
     }
   ],
   "lastTaskNumber": {
-    "number": "19"
+    "number": "20"
   },
   "comments": [
     {
@@ -1884,6 +1917,15 @@
       "comment": "test test",
       "taskId": "2",
       "id": "TdrtPlx"
+    },
+    {
+      "dateAdded": "Sun Jan 21 2018 21:49:26 GMT+0200 (Eastern Europe Standard Time)",
+      "userId": "1",
+      "userName": "Ivan Shevchenko",
+      "userPhotoUrl": "img/avatar/00001.jpg",
+      "comment": "new",
+      "taskId": "5",
+      "id": "QxN7Ocn"
     }
   ],
   "attachments": [

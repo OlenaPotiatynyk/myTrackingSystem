@@ -427,13 +427,6 @@ textarea {
     /*-o-object-fit: cover;*/
 }
 
-.gallery__wrapper--preview {
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin-right: 20px;
-}
-
 .person-aside-block {
     border: 1px solid white;
     padding: 4px;
@@ -694,10 +687,7 @@ button:hover,
 
 /* It is important do not relocate this upper*/
 
-.hide {
-    display: none;
-}
-
+.hide,
 .nav .admin,
 .nav .hide {
     display: none;
@@ -714,18 +704,14 @@ button:hover,
     color: #666666;
 }
 
-@media only screen and (orientation: portrait) {
+@media screen and (orientation: portrait) {
     .column {
         width: 40%;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .column {
         width: 40%;
     }
-}
-
-@media only screen and (min-width: 500px) {
-
 }

@@ -82,30 +82,30 @@ function setLastTaskNumber(id) {
 function addNewTask(data) {
     var response = processRequest('tasks', 'POST', data);
 
-    response = processRequest('shortTasks', 'POST', generateShortTaskData(data, response));
+    response = processRequest('shortTasks', 'POST', generateShortTaskData(data, response.id));
 
-    setLastTaskNumber(+data.taskId.replace('Task-',''));
+    setLastTaskNumber(Number(data.taskId.replace('Task-', '')));
     return response.id;
 }
 
-function updateTask(data, taskId) {
-    processRequest('tasks/' + taskId, 'PATCH', data);
+function updateTask(data, id) {
+    processRequest('tasks/' + id, 'PATCH', data);
 
-    processRequest('shortTasks/' + taskId, 'PATCH', generateShortTaskData(data));
+    processRequest('shortTasks/' + id, 'PATCH', generateShortTaskData(data));
 }
 
 function processRequest(path, type, data) {
     return JSON.parse($.ajax({
-                                 type: type,
-                                 url: 'http://localhost:3000/' + path,
-                                 data: data,
-                                 async: false
-                             }).responseText);
+        type: type,
+        url: 'http://localhost:3000/' + path,
+        data: data,
+        async: false
+    }).responseText);
 }
 
-function generateShortTaskData(data, response) {
+function generateShortTaskData(data, id) {
     return {
-        id: response === undefined ? '' : response.id,
+        id: id === undefined ? '' : id,
         taskId: data.taskId,
         title: data.title,
         assigneeId: data.assigneeId,

@@ -11,183 +11,208 @@ $.ajax({
 });
 
 $(function () {
-
-    generateTable(getStatuses(), getShortTasks());
-
     window.location.hash = '#';
-
     verifyIfUserLoggedIn();
 
     $(window).on('hashchange', function () {
         render(decodeURI(window.location.hash));
     });
 
+    $(window).trigger('hashchange');
+
     function render(url) {
         var temp = url.split('/')[0];
 
         var map = {
 
-            '': function () {
-
-                hideAllViews();
-                $('#task-board-view').removeClass('hide');
-                unhideNavButtons();
-                generateTable(getStatuses(), getShortTasks());
-            },
+            '': renderTaskBoardView,
 
             // IE splits strings in his own way
-            '#': function () {
+            '#': renderTaskBoardView,
 
-                hideAllViews();
-                $('#task-board-view').removeClass('hide');
-                unhideNavButtons();
-                generateTable(getStatuses(), getShortTasks());
-            },
+            '#assigned-to-me': renderAssignedToMeView,
 
-            '#assigned-to-me': function () {
+            '#reported-by-me': renderReportedByMeView,
 
-                hideAllViews();
-                $('#task-board-view').removeClass('hide');
-                generateTable(getStatuses(), getAssignedToMeShortTasks(localStorage.getItem('user')));
-            },
+            '#show-high-priority-tasks': renderHighPriorityTesksView,
 
-            '#reported-by-me': function () {
+            '#task': renderTaskView,
 
-                hideAllViews();
-                $('#task-board-view').removeClass('hide');
-                generateTable(getStatuses(), getReportedByMeShortTasks(localStorage.getItem('user')));
-            },
+            '#gallery': renderTaskGalleryModal,
 
-            '#show-high-priority-tasks': function () {
+            '#add-attachment': renderAddAttachmentModal,
 
-                hideAllViews();
-                $('#task-board-view').removeClass('hide');
-                generateTable(getStatuses(), getHighPriorityTasks());
-            },
+            '#contacts': renderContactsView,
 
-            '#task': function () {
+            '#login': renderLoginModal,
 
-                var taskId = url.split('#task/')[1].trim();
-                hideAllViews();
-                $('#opened-task-view').removeClass('hide');
-                generateTaskPage(taskId);
-            },
+            '#edit-task': renderEditTaskModal,
 
-            '#gallery': function () {
-                var taskId = url.split('/')[1];
-                var photoId = url.split('/')[2];
-                showGalleryModal(taskId, photoId);
-            },
+            '#add-user': renderAddNewTaskModal,
 
-            '#add-attachment': function () {
-                var taskId = url.split('#add-attachment/')[1].trim();
-
-                showAttachmentModal(taskId);
-            },
-
-            '#contacts': function () {
-                hideAllViews();
-                $('#contacts-view').removeClass('hide');
-            },
-
-            '#login': function () {
-                localStorage.removeItem('user');
-                showLoginModal();
-            },
-
-            '#edit-task': function () {
-                var taskId = url.split('#edit-task/')[1];
-                showEditTaskModal(taskId);
-            },
-
-            '#add-user': function () {
-                showNewUserModal();
-            },
-
-            '#unauthorized': function () {
-                hideAllViews();
-                hideNavButtonsForUnauthorized();
-                $('#login-button').text('Login');
-                $('#unauthorized-page-view').removeClass('hide');
-            }
+            '#unauthorized': renderUnauthorizedView
         };
 
         if (map[temp]) {
-            map[temp]();
+            map[temp](url);
         }
         else {
-            hideAllViews();
-            $('#error-page-view').removeClass('hide');
+            renderErrorView();
         }
     }
 
-    $('#edit-task').on('submit', function (e) {
-        e.preventDefault();
-        var form = $('form[id="edit-task"]');
-        var taskId = window.location.hash.split('#edit-task/')[1];
+    $('#edit-task').on('submit', submitEditTaskForm);
 
-        if (taskId === undefined) {
-            taskId = addNewTask(prepareTaskData(form[0], taskId));
-        } else {
-            updateTask(prepareTaskData(form[0], taskId), taskId);
-        }
+    $('#add-comment').on('submit', submitAddingCommentToTaskForm);
 
-        $('#adding-task-modal').css('display', 'none');
-        window.location.hash = '#task/' + taskId;
-    });
+    $('#add-attachment').on('submit', submitAddingAttachmentToTaskForm);
 
-    $('#add-comment').on('submit', function (e) {
-        e.preventDefault();
-        var form = $('form[id="add-comment"]');
+    $('#add-user').on('submit', submitAddingUserForm);
 
-        var taskId = window.location.hash.split('#task/')[1];
-
-        addTaskComment(createTaskComment(form[0], taskId), taskId);
-
-        form.find('textarea').val('');
-
-        renderComments(0);
-    });
-
-    $('#add-attachment-form').on('submit', function (e) {
-        e.preventDefault();
-        var form = $('form[id="add-attachment-form"]');
-
-        var taskId = window.location.hash.split('#add-attachment/')[1];
-
-        addTaskAttachment(createTaskAttachment(form[0]), taskId);
-
-        $('#adding-attachment-modal').css('display', 'none');
-        window.location.hash = '#task/' + taskId;
-    });
-
-    $('#add-user').on('submit', function (e) {
-        e.preventDefault();
-        var form = $('form[id="add-user"]');
-        addUser(createUser(form[0]));
-
-        $('#adding-user-modal').css('display', 'none');
-        window.location.hash = '#';
-    });
-
-    $('#login').on('submit', function (e) {
-        e.preventDefault();
-        var form = $('form[id="login"]');
-        var userId = form[0].elements.user.value;
-        localStorage.setItem('user', userId);
-
-        var user = getUserById(userId);
-        enableAdminButton(user);
-
-        $('#login-modal').css('display', 'none');
-        $('#login-button').text('Logout');
-        $('#logged-in-user').text(user.userName);
-        window.location.hash = '#';
-    });
+    $('#login').on('submit', submitLoginForm);
 });
 
+function submitEditTaskForm(event) {
+    event.preventDefault();
+    var form = $('form[id="edit-task"]');
+    var id = window.location.hash.split('#edit-task/')[1];
+
+    if (id === undefined) {
+        id = addNewTask(prepareTaskData(form[0], id));
+    } else {
+        updateTask(prepareTaskData(form[0], id), id);
+    }
+
+    $('#adding-task-modal').css('display', 'none');
+    window.location.hash = '#task/' + id;
+}
+
+function submitAddingCommentToTaskForm(event) {
+    event.preventDefault();
+    var form = $('form[id="add-comment"]');
+
+    var taskId = window.location.hash.split('#task/')[1];
+
+    addTaskComment(createTaskComment(form[0], taskId), taskId);
+
+    form.find('textarea').val('');
+
+    renderComments(0);
+}
+
+function submitAddingAttachmentToTaskForm(event) {
+    event.preventDefault();
+    var form = $('form[id="add-attachment"]');
+
+    var taskId = window.location.hash.split('#add-attachment/')[1];
+
+    addTaskAttachment(createTaskAttachment(form[0]), taskId);
+
+    $('#adding-attachment-modal').css('display', 'none');
+    window.location.hash = '#task/' + taskId;
+}
+
+function submitAddingUserForm(event) {
+    event.preventDefault();
+    var form = $('form[id="add-user"]');
+    addUser(createUser(form[0]));
+
+    $('#adding-user-modal').css('display', 'none');
+    window.location.hash = '#';
+}
+
+function submitLoginForm(event) {
+    event.preventDefault();
+    var form = $('form[id="login"]');
+    var userId = form[0].elements.user.value;
+    sessionStorage.setItem('user', userId);
+
+    var user = getUserById(userId);
+    enableAdminButton(user);
+
+    $('#login-modal').css('display', 'none');
+    $('#login-button').text('Logout');
+    $('#logged-in-user').text(user.userName);
+    window.location.hash = '#';
+}
+
+function renderTaskBoardView() {
+    hideAllViews();
+    $('#task-board-view').removeClass('hide');
+    unhideNavButtons();
+    generateTable(getStatuses(), getShortTasks());
+}
+
+function renderAssignedToMeView() {
+    hideAllViews();
+    $('#task-board-view').removeClass('hide');
+    generateTable(getStatuses(), getAssignedToMeShortTasks(sessionStorage.getItem('user')));
+}
+
+function renderReportedByMeView() {
+    hideAllViews();
+    $('#task-board-view').removeClass('hide');
+    generateTable(getStatuses(), getReportedByMeShortTasks(sessionStorage.getItem('user')));
+}
+
+function renderHighPriorityTesksView() {
+    hideAllViews();
+    $('#task-board-view').removeClass('hide');
+    generateTable(getStatuses(), getHighPriorityTasks());
+}
+
+function renderTaskView(url) {
+    var taskId = url.split('#task/')[1].trim();
+    hideAllViews();
+    $('#opened-task-view').removeClass('hide');
+    generateTaskPage(taskId);
+}
+
+function renderContactsView() {
+    hideAllViews();
+    $('#contacts-view').removeClass('hide');
+    initMap();
+}
+
+function renderUnauthorizedView() {
+    hideAllViews();
+    hideNavButtonsForUnauthorized();
+    $('#login-button').text('Login');
+    $('#unauthorized-page-view').removeClass('hide');
+}
+
+function renderErrorView() {
+    hideAllViews();
+    $('#error-page-view').removeClass('hide');
+}
+
+function renderTaskGalleryModal(url) {
+    var taskId = url.split('/')[1];
+    var photoId = url.split('/')[2];
+    showGalleryModal(taskId, photoId);
+}
+
+function renderAddAttachmentModal(url) {
+    var taskId = url.split('#add-attachment/')[1].trim();
+    showAttachmentModal(taskId);
+}
+
+function renderLoginModal() {
+    sessionStorage.removeItem('user');
+    showLoginModal();
+}
+
+function renderEditTaskModal(url) {
+    var taskId = url.split('#edit-task/')[1];
+    showEditTaskModal(taskId);
+}
+
+function renderAddNewTaskModal() {
+    showNewUserModal();
+}
+
 function verifyIfUserLoggedIn() {
-    var currentUser = localStorage.getItem('user');
+    var currentUser = sessionStorage.getItem('user');
 
     if (currentUser === null) {
         window.location.hash = '#login';
@@ -300,13 +325,20 @@ function renderComments(page) {
     for (var i = firstCommentNumber; i < Math.min(firstCommentNumber + 3, comments.length); i++) {
         var comment = comments[i];
         commentsContainer.append('<div class=\"comment\"><div class="comment__info"><img class="person-aside-block__img"' +
-            ' src="' + comment.userPhotoUrl + '" title="' + comment.userName + '"><div> ' + comment.userName + ' <span><em>(' + comment.dateAdded
-            + ')</em></span>: </div></div>' + '<p>' + comment.comment + '</p></div>');
+            ' src="' + comment.userPhotoUrl + '" title="' + comment.userName + '"><div> ' + comment.userName
+            + ' <span><em>(' + new Date(comment.dateAdded).toLocaleDateString() + ' '
+            + new Date(comment.dateAdded).toLocaleTimeString() + '):'
+            + ' </em></span></div></div>' + '<p>' + comment.comment + '</p></div>');
     }
 
     var pagesNumber = Math.ceil(comments.length / 3);
-    for (i = 1; i <= pagesNumber; i++) {
-        paginationContainer.append('<a class=\"pagination__links\" onclick="renderComments(' + (i - 1) + ')">' + i + '</a>')
+    for (i = 0; i < pagesNumber; i++) {
+        var activeBtnClass = '';
+        if (page === i) {
+            activeBtnClass = 'active';
+        }
+        paginationContainer.append('<a class=\"pagination__links ' + activeBtnClass
+            + '\" onclick="renderComments(' + i + ')">' + (i + 1) + '</a>')
     }
 }
 
@@ -361,7 +393,7 @@ function prepareTaskData(form, id) {
     var priority = getTaskPriorityById(form.elements.priority.value);
     var type = form.elements.type.value;
     var assignee = getUserById(form.elements.assignee.value);
-    var reporter = getUserById(localStorage.getItem('user'));
+    var reporter = getUserById(sessionStorage.getItem('user'));
     var taskId;
 
     if (id === undefined) {
@@ -388,7 +420,7 @@ function prepareTaskData(form, id) {
 }
 
 function createTaskComment(form) {
-    var user = getUserById(localStorage.getItem('user'));
+    var user = getUserById(sessionStorage.getItem('user'));
 
     var comment = form.elements.comment.value;
     return {
@@ -431,17 +463,27 @@ function generateNewTaskId() {
 //google-map api
 function initMap() {
     var coordinates = {
-        lat: 50.4305191,
-        lng: 30.4871098
+        lat: 50.430787,
+        lng: 30.487192
     };
-
     var map = new google.maps.Map($('#map')[0], {
         zoom: 16,
         center: coordinates
     });
 
     var marker = new google.maps.Marker({
-        // position: coordinates,
+        position: coordinates,
         map: map
     });
+}
+
+function validateDigitInput(event) {
+    var theEvent = event || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode(key);
+    var regex = /[\d]/;
+    if (!regex.test(key)) {
+        theEvent.returnValue = false;
+        if (theEvent.preventDefault) theEvent.preventDefault();
+    }
 }

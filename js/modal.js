@@ -15,6 +15,8 @@ function showGalleryModal(taskId, pictureId)  {
 
     modal.style.display = 'block';
     modalImg.src = attachments[pictureIndex].url;
+    modalImg.title = attachments[pictureIndex].fileName;
+    modalImg.alt = attachments[pictureIndex].fileName;
     captionText.innerHTML = attachments[pictureIndex].fileName;
 
     var nextPictureIndex = attachments.length - 1 === pictureIndex ? 0 : pictureIndex + 1;
@@ -39,17 +41,15 @@ function showGalleryModal(taskId, pictureId)  {
     };
 }
 
-function showEditTaskModal(taskId) {
-    var taskModal = $('#adding-task-modal')[0];
-    taskModal.style.display = 'block';
+function showEditTaskModal(id) {
+    var container = $('#adding-task-modal');
+    container[0].style.display = 'block';
 
     var task;
 
-    if (taskId !== undefined) {
-        task = getTaskById(taskId);
+    if (id !== undefined) {
+        task = getTaskById(id);
     }
-
-    var container = $('#adding-task-modal');
 
     var statuses = getStatuses();
     var types = getTaskTypes();
@@ -78,10 +78,10 @@ function showEditTaskModal(taskId) {
         container.find('#add-task-assignee').append('<option value="' + user.id + '">' + user.userName +'</option>');
     });
 
-    container.find('#add-task-title').empty();
-    container.find('#add-task-description').empty();
+    container.find('#add-task-title').val('');
+    container.find('#add-task-description').val('');
     if (task !== undefined){
-        container.find('#add-task-title').attr('value', task.title);
+        container.find('#add-task-title').val(task.title);
         container.find('#add-task-description').val(task.description);
         container.find('#add-task-status').val(task.status);
         container.find('#add-task-type').val(task.type);
@@ -92,20 +92,21 @@ function showEditTaskModal(taskId) {
 
     var closeBtn = $('#close-add-task')[0];
     var closeTaskModal = function () {
-        taskModal.style.display = 'none';
+        container[0].style.display = 'none';
 
-        window.location.hash = '#task/' + taskId;
-        $(window).trigger('hashchange');
+        if (id === undefined){
+            window.location.hash = '#';
+            $(window).trigger('hashchange');
+        } else {
+            window.location.hash = '#task/' + id;
+        }
     };
 
     closeBtn.addEventListener('click', closeTaskModal);
 
     window.onclick = function (event) {
-        if (event.target === taskModal) {
-            taskModal.style.display = 'none';
-
-            window.location.hash = '#task/' + taskId;
-            $(window).trigger('hashchange');
+        if (event.target === container[0]) {
+            closeTaskModal();
         }
     };
 }
@@ -118,50 +119,40 @@ function showNewUserModal() {
     var closeBtn = $('#close-add-user')[0];
     var closeUserModal = function () {
         userModal.style.display = 'none';
-
         window.location.hash = '#';
-        $(window).trigger('hashchange');
     };
 
     closeBtn.addEventListener('click', closeUserModal);
 
     window.onclick = function (event) {
         if (event.target === userModal) {
-            userModal.style.display = 'none';
-
-            window.location.hash = '#';
-            $(window).trigger('hashchange');
+            closeUserModal();
         }
     };
 }
 
 function showLoginModal() {
-    var loginModal = $('#login-modal')[0];
-    loginModal.style.display = 'block';
-
-    var container = $('#login-modal');
+    var loginModal = $('#login-modal');
+    loginModal[0].style.display = 'block';
 
     var users = getUsers();
 
-    container.find('#choose-user').empty();
+    loginModal.find('#choose-user').empty();
     users.forEach(function (user) {
-        container.find('#choose-user').append('<option value="' + user.id + '">' + user.userName + '</option>');
+        loginModal.find('#choose-user').append('<option value="' + user.id + '">' + user.userName + '</option>');
     });
 
     var closeBtn = $('#close-login')[0];
     var closeLoginModal = function () {
-        loginModal.style.display = 'none';
-
+        loginModal[0].style.display = 'none';
         window.location.hash = '#unauthorized';
     };
 
     closeBtn.addEventListener('click', closeLoginModal);
 
     window.onclick = function (event) {
-        if (event.target === loginModal) {
-            loginModal.style.display = 'none';
-
-            window.location.hash = '#unauthorized';
+        if (event.target === loginModal[0]) {
+            closeLoginModal();
         }
     };
 }
@@ -173,17 +164,14 @@ function showAttachmentModal(taskId) {
     var closeBtn = $('#close-add-attachment')[0];
     var closeAttachmentModal = function () {
         attachmentModal.style.display = 'none';
-
-        window.location.hash = '#';
-        $(window).trigger('hashchange');
+        window.location.hash = '#task/' + taskId;
     };
 
     closeBtn.addEventListener('click', closeAttachmentModal);
 
     window.onclick = function (event) {
         if (event.target === attachmentModal) {
-            attachmentModal.style.display = 'none';
-            window.location.hash = '#task/' + taskId;
+            closeAttachmentModal();
         }
     };
 }
