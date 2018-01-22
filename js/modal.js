@@ -113,12 +113,15 @@ function showEditTaskModal(id) {
 
 
 function showNewUserModal() {
-    var userModal = $('#adding-user-modal')[0];
-    userModal.style.display = 'block';
+    var userModal = $('#adding-user-modal');
+    userModal[0].style.display = 'block';
+
+    userModal.find('#new-user-name').val('');
+    userModal.find('#new-user-photo').val('');
 
     var closeBtn = $('#close-add-user')[0];
     var closeUserModal = function () {
-        userModal.style.display = 'none';
+        userModal[0].style.display = 'none';
         window.location.hash = '#';
     };
 

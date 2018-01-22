@@ -444,7 +444,8 @@ function createTaskAttachment(form) {
 
 function createUser(form) {
     var userName = form.elements.name.value;
-    var userAvatarUrl = form.elements.photo.value;
+    var userAvatarUrl = form.elements.photo.value === "" ? "/img/icons/user.svg"
+        : form.elements.photo.value;
     var userRole = form.elements.role.value;
     return {
         userName: userName,
