@@ -1,26 +1,32 @@
 # 🛠️ My Tracking System (a.k.a. Baby Jira 👶)
 
-> One vanilla JS file to rule them all.
+[![Made with Vanilla JS](https://img.shields.io/badge/Made%20with-Vanilla%20JS-yellow?style=flat&logo=javascript)](https://github.com/your-username/my-tracking-system)
+[![No Framework](https://img.shields.io/badge/No-Framework-red?style=flat)](https://github.com/your-username/my-tracking-system)
+[![100% Handcrafted DOM](https://img.shields.io/badge/100%25-Handcrafted%20DOM-orange?style=flat)](https://github.com/your-username/my-tracking-system)
+[![Created in 2017](https://img.shields.io/badge/Created%20in-2017-blue?style=flat)](https://github.com/your-username/my-tracking-system)
+[![Old but Gold](https://img.shields.io/badge/Old%20but-Gold-brightgreen?style=flat)](https://github.com/your-username/my-tracking-system)
+[![Personal Favorite](https://img.shields.io/badge/Personal-Favorite-ff69b4?style=flat)](https://github.com/your-username/my-tracking-system)
+[![Built with Love](https://img.shields.io/badge/Built%20with-%E2%9D%A4-red?style=flat)](https://github.com/your-username/my-tracking-system)
 
-This is my first ever pet project, created back in **2017** with love, curiosity, and just a little bit of chaos.  
-Built entirely with **vanilla JavaScript** and **jQuery**, it's my personal time capsule of how it all began 💛
+> **My very first app (2017)** — a simple task tracker built with vanilla JS and jQuery.  
+> Everything in one file, no frameworks, just passion and curiosity.  
+> It's messy, nostalgic, and full of heart — the project that started it all 💛
 
 ---
 
 ## 🔍 What is this?
 
-A simple task tracking system (inspired by Jira), built before I discovered frameworks, components, or code splitting.  
-Data is stored via JSON-server. Everything lives in a single file. It's glorious.
+A basic task tracking system (inspired by Jira), created back when I was just starting out in front-end development.  
+No frameworks, no modules, no fancy tooling — just pure JS, jQuery, and lots of console logs 😅  
+The app uses JSON-server to simulate a real backend.
 
 ---
 
 ## 🧪 Tech Stack:
 
-- 🧬 Vanilla JavaScript (all-in-one-file style)
-- 🐭 jQuery (because why not)
-- 🗃️ JSON-server (for that real-deal backend feel)
-
-No frameworks. No modules. Just raw JS and DOM wrestling.
+- 🧬 Vanilla JavaScript (monolith style — everything in one file!)
+- 🐭 jQuery (to simplify some DOM stuff)
+- 🗃️ JSON-server (to persist data)
 
 ---
 
